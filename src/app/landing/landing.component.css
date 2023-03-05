@@ -1,22 +1,155 @@
-body {
+* {
     font-family: 'Poppins';
     font-style: normal;
-    padding: 25px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
 }
 
 html,
 body {
-    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
     padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.img {
+.parent {
+    position: relative;
+}
+
+.middle-section {
+    text-align: center;
+    top: 360px;
+    z-index: 1000;
+    color: #fff;
+    position: absolute;
+    font-family: 'Poppins';
+    align-items: center;
+}
+
+.middle-section p {
+    font-size: 15px;
+    position: absolute;
+    top: 100px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.middle-section h1 {
+    position: absolute;
+    top: 5px;
+    font-family: 'Poppins';
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.middle-section img {
+    height: 50px;
+    width: auto;
+    z-index: 350;
+    top: 225px;
+    position: absolute;
+    align-items: center;
+    left: 42%;
+}
+
+.top-img {
     width: 100%;
+    height: 99%;
     background-origin: border-box;
     background-repeat: no-repeat;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.seller {
+    background-color: #5A89EA;
+    height: 50%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.dealership {}
+
+.security {}
+
+.buyer {
+    background-color: #5A89EA;
+    height: 100vh;
+    /* border-top-left-radius: 1050px;
+    border-top-right-radius: 1050px; */
+    border-radius: 100%;
     padding: 0;
+    position: absolute;
+    top: 750px;
+    z-index: 400;
+    width: 100%;
+    margin: 0;
+}
+
+.white-circle {
+    background-color: #fff;
+    height: 50vh;
+    width: 100%;
+    border-radius: 100%;
+    padding: 0;
+    z-index: 40;
+    position: absolute;
+    top: 800px;
+}
+
+.black-circle {
+    background-color: #000;
+    height: 60vh;
+    width: 100%;
+    border-radius: 100%;
+    padding: 0;
+    z-index: 40;
+    position: absolute;
+    top: 850px;
+}
+
+.blue {
+    position: absolute;
+    z-index: 400;
+    top: 0;
+}
+
+.black-two {
+    background-color: #000;
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+    z-index: 40;
+    position: absolute;
+    top: 1181px;
+}
+
+.blue-block {
+    background-color: #5A89EA;
+    height: 250vh;
+    width: 100%;
+    padding: 0;
+    z-index: 400;
+    position: absolute;
+    top: 1300px;
+}
+
+.black {
+    position: absolute;
+    top: 0;
+    z-index: 200;
 }
