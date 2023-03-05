@@ -64,6 +64,15 @@ body {
     left: 42%;
 }
 
+.middle-section .arrow {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: transparent;
+    top: 370px;
+    left: 48.5%;
+    position: inherit;
+}
+
 .top-img {
     width: 100%;
     height: 99%;
@@ -153,3 +162,23 @@ body {
     top: 0;
     z-index: 200;
 }
+
+.buyers-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+    z-index: 5099;
+}
+
+.buyer-content {
+    position: absolute;
+    top: 0;
+}
+
+.buyyers-grid img {
+    height: 100px;
+    width: auto;
+}
+
+
+/* for mobileor smaller screens */
