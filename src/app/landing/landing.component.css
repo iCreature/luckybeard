@@ -7,23 +7,75 @@
     height: 100%;
 }
 
-html,
-body {
-    font-family: 'Poppins';
-    font-style: normal;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px;
+    padding-top: 1px;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    color: #ffffff;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    padding-right: 110px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:last-child a {
+    background-color: #3969B1;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:last-child a:hover {
+    background-color: #5A89EA;
 }
 
 .parent {
     position: relative;
+    width: 100%;
 }
 
 .middle-section {
     text-align: center;
-    top: 360px;
+    top: 260px;
     z-index: 1000;
     color: #fff;
     position: absolute;
@@ -36,7 +88,7 @@ body {
     position: absolute;
     top: 100px;
     font-family: 'Poppins';
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
@@ -47,7 +99,7 @@ body {
     position: absolute;
     top: 5px;
     font-family: 'Poppins';
-    font-size: 62px;
+    font-size: 42px;
     font-weight: 600;
     line-height: 65px;
     letter-spacing: -0.03em;
@@ -55,7 +107,7 @@ body {
 }
 
 .middle-section img {
-    height: 50px;
+    height: 40px;
     width: auto;
     z-index: 350;
     top: 225px;
@@ -68,8 +120,8 @@ body {
     border: 1px solid transparent;
     background-color: transparent;
     color: transparent;
-    top: 370px;
-    left: 48.5%;
+    top: 310px;
+    left: 47.6%;
     position: inherit;
 }
 
@@ -100,10 +152,10 @@ body {
     height: 100vh;
     /* border-top-left-radius: 1050px;
     border-top-right-radius: 1050px; */
-    border-radius: 100%;
+    border-radius: 100% 100% 0 0;
     padding: 0;
     position: absolute;
-    top: 750px;
+    top: 580px;
     z-index: 400;
     width: 100%;
     margin: 0;
@@ -113,22 +165,22 @@ body {
     background-color: #fff;
     height: 50vh;
     width: 100%;
-    border-radius: 100%;
+    border-radius: 100% 100% 0 0;
     padding: 0;
     z-index: 40;
     position: absolute;
-    top: 800px;
+    top: 585px;
 }
 
 .black-circle {
     background-color: #000;
-    height: 60vh;
+    height: 80vh;
     width: 100%;
-    border-radius: 100%;
+    border-radius: 100% 100% 0 0;
     padding: 0;
     z-index: 40;
     position: absolute;
-    top: 850px;
+    top: 600px;
 }
 
 .blue {
@@ -144,7 +196,7 @@ body {
     padding: 0;
     z-index: 40;
     position: absolute;
-    top: 1181px;
+    top: 1018px;
 }
 
 .blue-block {
@@ -154,7 +206,7 @@ body {
     padding: 0;
     z-index: 400;
     position: absolute;
-    top: 1300px;
+    top: 1100px;
 }
 
 .black {
@@ -166,30 +218,53 @@ body {
 .buyers-grid {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 0;
+    padding: 10px;
     z-index: 1099;
     grid-gap: 15px;
+    grid-row-gap: 10px;
+    /* grid-column-gap: 0px;
+    grid-row-gap: 0px; */
     width: 70%;
-    align-items: center;
-    right: 100%;
-    text-align: center;
+    margin-left: 20%
 }
 
 .buyer-content {
-    top: 960px;
     z-index: 1000;
-    color: #fff;
-    font-family: 'Poppins';
-    padding: 1px;
-    margin-left: 50px;
-    align-items: center;
     width: 100%;
+    color: #000;
+    font-family: 'Poppins';
+    width: 100%;
+    text-align: center;
+}
+
+.buyer-content p {
+    top: 200px;
+    /* font-size: 65px; */
 }
 
 .buyers-grid img {
     height: 500px;
     width: auto;
 }
+
+.buyer-id {}
+
+
+/* .curved-div {
+    background: #ff3c00;
+    color: #FFF;
+    text-align: center;
+}
+
+.curved-div h1 {
+    font-size: 6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.curved-div p {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
 
 
 /* for mobileor smaller screens */

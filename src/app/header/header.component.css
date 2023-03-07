@@ -1,23 +1,12 @@
-* {
-    font-family: 'Poppins';
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Poppins';
-    padding: 0;
-    margin: 0;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    padding: 20px;
+    padding: 0px;
+    padding-top: 1px;
     z-index: 200;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -28,19 +17,21 @@ header {
 .logo img {
     height: 100px;
     width: auto;
+    padding-left: 30px;
+    padding-top: 15px;
 }
 
 nav {
-    margin-right: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     color: #fff;
+    padding-right: 110px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: flex-end;
 }
 
 nav ul li {
@@ -57,13 +48,13 @@ nav ul li a {
 }
 
 nav ul li:last-child a {
-    background-color: #5A89EA;
+    background-color: #3969B1;
     border-radius: 10px;
+    padding: 10px;
     color: #fff;
-    padding: 10px 20px;
     text-decoration: none;
 }
 
 nav ul li:last-child a:hover {
-    background-color: none;
+    background-color: #5A89EA;
 }
