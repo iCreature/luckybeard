@@ -1,4 +1,17 @@
-<app-header></app-header>
+<header>
+    <div class="logo">
+        <img src="./assets/images/logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a (click)="scrollToBuyer()">For Buyers</a></li>
+            <li><a (click)="scrollToPrivateSeller()">For Sellers</a></li>
+            <li><a (click)="scrollToDealerShip()">Dealerships</a></li>
+            <li><a (click)="scrollToSecurity()">Security</a></li>
+            <li><a (click)="dealershipLogin()">Dealership Login</a></li>
+        </ul>
+    </nav>
+</header>
 <div class="parent">
     <div class="top-img"><img src="./assets/images/Picture1.png" class="top-img"></div>
     <div class="middle-section">
@@ -7,35 +20,145 @@
         <img src="./assets/images/store.png">
         <img src="./assets/images/arrow.png" class="arrow" (click)="scrollToBuyer()">
     </div>
-    <div id="buyer-id">
+    <section id="buyer-id">
         <div class="buyers-grid">
             <div class="buyer-content">
                 <img src="./assets/images/buyer-group.png">
             </div>
             <div class="buyer-content">
+                <br>
                 <h2>Search for the car of your<br> dreams and test drive it</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sed malesuada habitant odio eu etiam proin odio habitant. Elit felis aliquam suspendisse amet nunc. Erat.
-                </h3>
-
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Eu sed malesuada habitant odio eu etiam proin odio<br> habitant. Elit felis aliquam suspendisse amet nunc. Erat.</p>
+                <br>
+                <div class="image-text-section">
+                    <p><img src="./assets/images/Group.png" alt="Image" width="10px">Multiple filtering options</p>
+                    <p><img src="./assets/images/Group.png" alt="Image" width="10px">Test drives with both private sellers or dealerships</p>
+                    <p><img src="./assets/images/Group.png" alt="Image" width="10px">Take pictures and notes during test drive</p>
+                </div>
+            </div>
+            <div class="buyer-content">
+                <h2>Only real people</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Eu sed malesuada habitant odio eu etiam proin odio<br> habitant. Elit felis aliquam suspendisse amet nunc. Erat.</p>
+                <br>
+                <div class="image-text-section">
+                    <p><img src="./assets/images/Group.png" alt="Image" width="10px">Secure and verified registration</p>
+                    <p><img src="./assets/images/Group.png" alt="Image" width="10px">Direct messaging with the seller</p>
+                    <p><img src="./assets/images/Group.png" alt="Image" width="10px">Instant armed response if something goes wrong</p>
+                </div>
+            </div>
+            <div class="buyer-content">
+                <img src="./assets/images/buyer-group.png">
             </div>
         </div>
-    </div>
-</div>
-<div class="buyers-grid">
-    <div class="buyer-content">
-        <h2>Search for the car of your<br> dreams and test drive it</h2>
-    </div>
-    <div class="buyer-content">
-        <img src="./assets/images/buyer-group.png">
-    </div>
+    </section>
+
 </div>
 
-<div class=" white-circle "></div>
+<div class="white-circle-top">
+    <img src="./assets/images/Ellipse 4.png">
+</div>
+<div class="black-circle-top">
+    <img src="./assets/images/Ellipse 6.png">
+</div>
+
+<!-- <div class=" white-circle "></div> -->
 <div class="blue ">
     <div class="buyer "></div>
     <div class="blue-block "></div>
 </div>
-<div class="black ">
-    <div class="black-circle "></div>
-    <div class="black-two "></div>
+
+<br><br><br><br><br><br><br><br>
+<div class="second-image ">
+    <img src="./assets/images/Union.png ">
 </div>
+<br><br><br><br>
+<section id="private-seller">
+    <div class="private-seller">
+        <h1>Private seller? <br>We got your back</h1>
+        <br>
+        <p>Want to sell your current car? Put it on Dealr, schedule appointments <br>and take advantage of our integrated financing engine.</p>
+        <br>
+        <div class="private-grid">
+            <div class="private-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>verified buyers</h5>
+                <h6>Secure and verified registration</h6>
+            </div>
+            <div class="private-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>no time wasters</h5>
+                <h6>Buyers undergo a credit check before to be able to book a test drive</h6>
+            </div>
+            <div class="private-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>scheduling</h5>
+                <h6>Set test drive scheduling</h6>
+            </div>
+            <div class="private-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>easy upload</h5>
+                <h6>Add a car ad in minutes via our extensive database of car models</h6>
+            </div>
+            <div class="private-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>GEO-LOCATED</h5>
+                <h6>Notifications to Geo-located opportunities</h6>
+            </div>
+            <div class="private-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>CHAT IN A TAP</h5>
+                <h6>Direct messaging with buyer</h6>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="white-circle-bottom">
+    <img src="./assets/images/Ellipse 4.png">
+</div>
+<div class=".blue-circle-bottom">
+    <img src="./assets/images/Ellipse 8.png">
+</div>
+<div class="black-circle-bottom">
+    <img src="./assets/images/Ellipse 6.png">
+</div>
+<div class="black-block-bottom">
+</div>
+<section id="dealership">
+    <div class="dealership">
+        <h1>Why DealR</h1>
+        <h2>For dealerships</h2>
+        <p>If you are a professional, we offer a desktop admin<br> platform, to allow a better and faster management of your<br> whole business</p><br><br>
+        <button (click)="requestDemo()">Request a demo</button><br><br><br><br><br><br><br><br>
+        <div class="dealership-grid">
+            <div class="dealership-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>integrated</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. n</h6>
+            </div>
+            <div class="dealership-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>organized</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. n</h6>
+            </div>
+            <div class="dealership-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>bulk actions</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. n</h6>
+            </div>
+            <div class="dealership-content">
+                <img src="./assets/images/face-id-6.png" alt="Image1" width="5px"><br>
+                <h5>GEO-LOCATED</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. n</h6>
+            </div>
+        </div>
+        <img src="./assets/images/Macbook Pro 2021 - Group.png">
+    </div>
+</section>
+<section>
+    <div class="security">
+        <img src="./assets/images/bottom.png">
+    </div>
+    <div class="block-bottom" id="security">
+
+    </div>
+</section>

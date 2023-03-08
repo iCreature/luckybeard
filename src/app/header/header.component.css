@@ -58,3 +58,11 @@ nav ul li:last-child a {
 nav ul li:last-child a:hover {
     background-color: #5A89EA;
 }
+
+button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    width: auto;
+    font-size: inherit;
+}

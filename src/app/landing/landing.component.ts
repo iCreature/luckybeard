@@ -20,20 +20,37 @@ export class LandingComponent {
 
   //scroll to buyer section
    // scroll to buyers
-   scrollToBuyer(): void {
+   scrollToBuyer(){
     const section = this.el.nativeElement.querySelector('#buyer-id');
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // navigate to the submit form here
+  requestDemo(): void{
+    //
+  }
+
+  //scroll to seccurity section
+
+  scrollToSecurity(): void{
+    const section = this.el.nativeElement.querySelector('#security');
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   // scroll to private seller
   scrollToPrivateSeller(): void{
-    const section = this.el.nativeElement.querySelector('#buyer-id');
+    const section = this.el.nativeElement.querySelector('#private-seller');
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   // scroll to immediate response
   scrollToResponse(): void {
-    const section = this.el.nativeElement.querySelector('#buyer-id');
+    const section = this.el.nativeElement.querySelector('#Response-id');
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  scrollToDealerShip():void {
+    const section = this.el.nativeElement.querySelector('#dealership');
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 

@@ -1,4 +1,4 @@
-import {  Component,ElementRef, OnInit,EventEmitter, Output ,Input} from '@angular/core';
+import {  Component,ElementRef, OnInit,EventEmitter, Output ,Input, ViewChild} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -12,9 +12,10 @@ export class HeaderComponent {
 
   }
   externalUrl = 'https://www.luckybeard.com/';
-  @Input()
-  onButtonClick!: Function;
+
+ // @Input() buyerSectionRef: ElementRef = null;
   @Output() btnBuyer = new EventEmitter();
+ 
 
    // dealership login
   dealershipLogin(): void {
@@ -22,10 +23,18 @@ export class HeaderComponent {
   }
 
   // scroll to buyers
-  scrollToBuyer() {
+  emitButtonClick(){
     this.btnBuyer.emit();
     this.onButtonClick();
-  }
+    }
+
+    onButtonClick(){
+
+
+      this.btnBuyer.emit();
+    }
+
+
 
   // scroll to private seller
   onSellerButton(): void{

@@ -23,6 +23,14 @@ header {
     color: #ffffff;
 }
 
+header button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    width: auto;
+    font-size: inherit;
+}
+
 .logo img {
     height: 100px;
     width: auto;
@@ -161,6 +169,12 @@ nav ul li:last-child a:hover {
     margin: 0;
 }
 
+.blue-block img {
+    width: 100%;
+    height: auto;
+    top: 10px;
+}
+
 .white-circle {
     background-color: #fff;
     height: 50vh;
@@ -170,6 +184,30 @@ nav ul li:last-child a:hover {
     z-index: 40;
     position: absolute;
     top: 585px;
+}
+
+.white-circle-top {
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    position: absolute;
+    top: 600px;
+}
+
+.black-circle-top {
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    top: 590px;
+}
+
+.blue-circle-top {
+    width: 100%;
+    height: auto;
+    z-index: 190;
+    position: absolute;
+    top: 600px;
 }
 
 .black-circle {
@@ -201,12 +239,22 @@ nav ul li:last-child a:hover {
 
 .blue-block {
     background-color: #5A89EA;
-    height: 250vh;
+    height: 140vh;
     width: 100%;
     padding: 0;
     z-index: 400;
     position: absolute;
     top: 1100px;
+}
+
+.black-block-bottom {
+    background-color: #030303;
+    height: 91.5vh;
+    width: 100%;
+    padding: 0;
+    z-index: 400;
+    position: absolute;
+    top: 3100px;
 }
 
 .black {
@@ -218,39 +266,249 @@ nav ul li:last-child a:hover {
 .buyers-grid {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 10px;
     z-index: 1099;
-    grid-gap: 15px;
-    grid-row-gap: 10px;
-    /* grid-column-gap: 0px;
-    grid-row-gap: 0px; */
+    grid-gap: 160px;
     width: 70%;
-    margin-left: 20%
+    margin-left: 20%;
+    align-items: left;
 }
 
 .buyer-content {
     z-index: 1000;
     width: 100%;
-    color: #000;
+    color: #fff;
     font-family: 'Poppins';
     width: 100%;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
 }
 
 .buyer-content p {
-    top: 200px;
+    text-align: left;
+    line-height: 1;
     /* font-size: 65px; */
 }
 
+h2 {
+    margin: 0.5em 0;
+    line-height: 1;
+    /* Reduce margin between h2 and p elements */
+}
+
+p {
+    margin: 0.25em 0;
+    line-height: 1;
+    /* Reduce margin between p elements */
+}
+
 .buyers-grid img {
-    height: 500px;
+    height: 350px;
     width: auto;
 }
 
 .buyer-id {}
 
+.image-text-section {}
 
-/* .curved-div {
+.image-text-section img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 20px;
+    width: auto;
+    /* optional, add some space between image and text */
+}
+
+.image-text-section p span {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.second-image {
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    position: absolute;
+}
+
+.black-circle-bottom {
+    width: 100%;
+    height: auto;
+    z-index: 1009;
+    position: absolute;
+    top: 2575px;
+}
+
+.white-circle-bottom {
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    position: absolute;
+    top: 2580px;
+}
+
+.blue-circle-bottom {
+    width: 100%;
+    height: auto;
+    z-index: 1205;
+    position: absolute;
+    top: 2780px;
+}
+
+.content-black-bg {}
+
+.private-seller {
+    position: absolute;
+    z-index: 2005;
+}
+
+.private-seller H1 {
+    text-align: center;
+    color: #fff;
+    font-size: 52px;
+    height: 170px;
+    ;
+    /* font-family: ; */
+}
+
+.private-seller p {
+    text-align: center;
+    color: #fff;
+}
+
+.private-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    z-index: 1099;
+    grid-gap: 0;
+    padding: 15px;
+    width: 45%;
+    margin-left: 27%;
+    align-items: start;
+    position: absolute;
+    top: 270px;
+    height: auto;
+}
+
+.private-content {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    width: 100px;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+}
+
+.private-content img {
+    height: auto;
+    width: 20px;
+}
+
+.private-content h5 {
+    font-family: 'Bebas Neue';
+}
+
+.dealership {
+    position: absolute;
+    z-index: 2005;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+}
+
+.dealership h1 {
+    font-family: 'Bebas Neue';
+    font-size: 38px;
+}
+
+.dealership h2 {
+    font-size: 48px;
+}
+
+.dealership img {
+    height: auto;
+    width: 1000px;
+    /* z-index: */
+}
+
+.dealership button {
+    border: 1px solid transparent;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+    width: 300px;
+    background-color: #5A89EA;
+}
+
+.dealership-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    z-index: 1099;
+    grid-gap: 0;
+    padding: 15px;
+    width: 30%;
+    margin-left: 35%;
+    align-items: start;
+    position: absolute;
+    top: 420px;
+    height: auto;
+}
+
+.dealership-content {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    width: 100px;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+}
+
+.dealership-content img {
+    height: auto;
+    width: 20px;
+}
+
+.dealership-content img {
+    height: auto;
+    width: 20px;
+}
+
+.dealership-content h5 {
+    font-family: 'Bebas Neue';
+}
+
+.security {
+    z-index: 1050;
+    position: absolute;
+    top: 3820px;
+}
+
+.security img {
+    width: 100%;
+    height: auto;
+}
+
+.block-bottom {
+    background-color: #EEF4FF;
+    position: absolute;
+    height: 91.5vh;
+    width: 100%;
+    padding: 0;
+    z-index: 400;
+    position: absolute;
+    top: 3960px;
+}
+
+
+/* curved-div {
     background: #ff3c00;
     color: #FFF;
     text-align: center;
