@@ -13,7 +13,7 @@ header {
     align-items: center;
     background-color: transparent;
     padding: 0px;
-    padding-top: 1px;
+    padding-top: 5px;
     z-index: 200;
     position: absolute;
     top: 0;
@@ -35,7 +35,7 @@ header button {
     height: 100px;
     width: auto;
     padding-left: 30px;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 nav {
@@ -469,6 +469,78 @@ p {
     height: auto;
     padding: 15px;
     text-align: left;
+}
+
+.security-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    z-index: 1099;
+    grid-gap: 100px;
+    padding: 15px;
+    width: 50%;
+    margin-left: 25%;
+    align-items: start;
+    position: absolute;
+    top: 4000px;
+    height: auto;
+}
+
+.security-content {
+    z-index: 3000;
+    width: 100%;
+    color: #fff;
+    font-family: 'Poppins';
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 30%;
+}
+
+.security-content h4 {
+    color: #000;
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    font-weight: light;
+}
+
+.security-content h2 {
+    color: #000;
+    font-size: 38px;
+}
+
+.security-content p {
+    color: #000;
+}
+
+.security-content .store {
+    width: 310px;
+    height: auto;
+    /* align-items: left; */
+    /* display: flex;
+    flex-direction: column; */
+    /* left: 510px; */
+}
+
+.security-content img {
+    width: auto;
+    height: 500px;
+}
+
+.bottom-block {
+    background-color: #030303;
+    height: 13vh;
+    width: 100%;
+    z-index: 4000;
+    position: absolute;
+    top: 4700px;
+    padding-top: 10px;
+}
+
+.bottom-block img {
+    width: 130px;
+    height: auto;
 }
 
 .dealership-content img {
