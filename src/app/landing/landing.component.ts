@@ -28,6 +28,7 @@ export class LandingComponent {
   // navigate to the submit form here
   requestDemo(): void{
     //
+    this.router.navigateByUrl('/demo');
   }
 
   //scroll to seccurity section

@@ -1,0 +1,219 @@
+*,
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.bg {
+    background-color: #5A89EA;
+    width: 100%;
+    height: 130vh;
+    position: relative;
+}
+
+.bg h1 {
+    color: #fff;
+    z-index: 18;
+    text-align: center;
+}
+
+.bg p {
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    z-index: 18;
+}
+
+.form {
+    width: 450px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    z-index: 250;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    margin-left: 35%;
+    padding: 25px;
+    padding-left: 105px;
+    position: absolute;
+}
+
+.form p {
+    color: #000;
+    text-align: left;
+}
+
+.form h1 {
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+}
+
+.form input {
+    padding: 15px;
+    color: #000;
+    border: 1px solid transparent;
+    border-bottom: 2.11px solid #E0E0E0;
+    width: 350px;
+    height: auto;
+}
+
+select {
+    padding: 15px;
+    color: #000;
+    border: 1px solid transparent;
+    border-bottom: 2.11px solid #E0E0E0;
+    width: 380px;
+    height: auto;
+}
+
+option {
+    width: 400px;
+    height: auto;
+    padding: 15px;
+}
+
+.enabled {
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #5A89EA;
+    width: 370px;
+    height: 55px;
+}
+
+.disabled {
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #E9EBEF;
+    width: 370px;
+    height: 55px;
+}
+
+.black-circle-bottom {
+    width: 100%;
+    height: auto;
+    z-index: 190;
+    position: absolute;
+    top: 970px;
+}
+
+.white-circle-bottom {
+    width: 100%;
+    height: auto;
+    z-index: 14;
+    position: absolute;
+    top: 960px;
+}
+
+.blue-circle-bottom {
+    width: 100%;
+    height: auto;
+    z-index: 14;
+    position: absolute;
+    top: 960px;
+}
+
+.block-bottom {
+    background-color: #030303;
+    position: absolute;
+    height: 80.5vh;
+    width: 100%;
+    padding: 0;
+    z-index: 40;
+    position: absolute;
+    top: 1260px;
+}
+
+.block-bottom img {
+    z-index: 300;
+    ;
+}
+
+.mac {
+    z-index: 300;
+    ;
+    width: 800px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 29%;
+}
+
+.article {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 300;
+    position: absolute;
+    ;
+    width: 60%;
+    top: 1800px;
+}
+
+.dealership-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    z-index: 1099;
+    grid-gap: 0;
+    padding: 15px;
+    width: 30%;
+    margin-left: 35%;
+    align-items: start;
+    position: absolute;
+    top: 1120px;
+    height: auto;
+}
+
+.dealership-content {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    width: 100px;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+}
+
+.dealership-content img {
+    height: auto;
+    width: 20px;
+}
+
+.dealership-content img {
+    height: auto;
+    width: 20px;
+}
+
+.dealership-content h5 {
+    font-family: 'Bebas Neue';
+}
+
+footer {
+    background-color: #6F7889;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    z-index: 8999;
+    width: 100%;
+    position: absolute;
+    top: 2000px;
+}
