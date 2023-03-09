@@ -31,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Side Note
 - due to limited time I couldn't get the website to be fully responisve
 - everything else works to spec.
+- this project was managed with Jira using the scrum methology and was completed with 2 sprints
+   upon request I'm more than happy to share my jira project
+
+Hope to chat soon :)!
