@@ -13,9 +13,9 @@ export class DemoComponent  implements OnInit,AfterViewInit{
   constructor(private api : ApiService){}
 
 
-  recipentEmail = "mxolisi1205@gmail.com";
-  isEnabled : boolean = false;
-  response : any;
+  recipentEmail = "neels@luckybeard.com";
+  isEnabled : boolean = true;
+  response : any ;
   role: any;
   name: any;
   email:any;
@@ -28,9 +28,25 @@ export class DemoComponent  implements OnInit,AfterViewInit{
   flag : boolean= false;
   artFlag : boolean =false;
 
+  emailData : any;
+
 
   //send email 
-  sendEmail(emailAddress: any): void {
+  sendEmail(): void {
+    this.emailData = {
+      "role":this.role,
+      "name": this.name,
+      "company":this.company,
+      "phone":this.phoneNumber,
+      "email":this.email
+    }
+
+    this.api.sendEmail(this.recipentEmail,this.emailData).subscribe(data=>{
+      this.response = data;
+      console.log(this.response)
+    }, error => {
+      console.error(error);
+    });
 
   }
 
@@ -39,8 +55,7 @@ export class DemoComponent  implements OnInit,AfterViewInit{
   // get the top stories
   getStory(){
     this.api.getTopStories().subscribe(data=>{
-      this.topStories= data;
-      
+      this.topStories = data;  
     });
   }
 
