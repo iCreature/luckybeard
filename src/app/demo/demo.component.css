@@ -158,13 +158,20 @@ option {
 
 .article {
     color: #fff;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     z-index: 300;
     position: absolute;
     ;
-    width: 60%;
+    width: 70%;
     top: 1800px;
+    margin-left: 28%;
+}
+
+.article a {
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
 }
 
 .dealership-grid {

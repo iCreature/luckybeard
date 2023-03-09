@@ -76,10 +76,13 @@
     <img src="./assets/images/Macbook Pro 2021 - Group.png">
 </div>
 <br><br>
-<div class="article">
-    <h1>d</h1>
-    <h1>d</h1>
-    <h1>d</h1>
+<div *ngIf="artFlag" class="article">
+    <div *ngFor="let art of articles">
+        <h1>
+            <a href="{{art?.url}}">{{art?.title}}</a>
+        </h1>
+    </div>
+
 </div>
 <footer>
     <p>Dealr Automotive Limited | Registration number: 629444 | 15 Harcourt street, St. Kevin’s, Dublin 2 D02 XY47, Dublin, Ireland</p>

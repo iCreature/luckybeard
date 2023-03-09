@@ -22,10 +22,11 @@ export class DemoComponent  implements OnInit,AfterViewInit{
   phoneNumber:any;
   company: any;
 
-  topStories : any=[];
+  topStories : any[]=[];
   articles : any[] = [];
 
   flag : boolean= false;
+  artFlag : boolean =false;
 
 
   //send email 
@@ -65,7 +66,9 @@ export class DemoComponent  implements OnInit,AfterViewInit{
         console.log(this.topStories);
         for (let i = 0; i < this.topStories.length; i++) {
           this.api.getArticle(this.topStories[i]).subscribe(data=>{
-            this.articles= data;
+            this.artFlag = true;
+            this.articles.push(data)   ;
+            // this.articles= JSON.parse(JSON.stringify(data));
             console.log(this.articles);
           }); 
         }
