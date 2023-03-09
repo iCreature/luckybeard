@@ -11,6 +11,14 @@ html {
     height: auto;
 }
 
+section {
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: auto;
+}
+
 .bg {
     background-color: #5A89EA;
     width: 100%;
