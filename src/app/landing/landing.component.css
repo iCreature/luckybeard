@@ -348,7 +348,7 @@ p {
     height: auto;
     z-index: 1009;
     position: absolute;
-    top: 2575px;
+    top: 2580px;
 }
 
 .white-circle-bottom {
@@ -362,9 +362,9 @@ p {
 .blue-circle-bottom {
     width: 100%;
     height: auto;
-    z-index: 1205;
+    z-index: 1003;
     position: absolute;
-    top: 2780px;
+    top: 2575px;
 }
 
 .content-black-bg {}
